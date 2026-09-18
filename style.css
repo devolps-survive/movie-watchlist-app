@@ -1,0 +1,268 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: Arial, sans-serif;
+
+  background: #f4f4f5;
+
+  min-height: 100vh;
+
+  padding: 40px 20px;
+  background-image: url("./image/cinema.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #666;
+}
+
+/* =========================
+   TASK FORM
+========================= */
+
+.movie-form {
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.movie-form input {
+  flex: 1;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+#addBtn {
+  background: #222;
+
+  color: white;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+
+  padding: 15px;
+
+  background: #f4f4f5;
+
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+
+  color: #666;
+
+  margin-bottom: 5px;
+}
+
+.stat strong {
+  font-size: 22px;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.filter {
+  background: #eee;
+}
+
+.filter.active {
+  background: #222;
+
+  color: white;
+}
+
+/* =========================
+   TASK LIST
+========================= */
+
+#movieList {
+  list-style: none;
+}
+
+/* =========================
+   TASK ITEM
+========================= */
+
+.movie-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  margin-bottom: 10px;
+}
+
+/* =========================
+   TASK TEXT
+========================= */
+
+.movie-text {
+  flex: 1;
+
+  cursor: pointer;
+}
+
+/* =========================
+   COMPLETED TASK
+========================= */
+
+.movie-item.done .movie-text {
+  text-decoration: line-through;
+
+  opacity: 0.5;
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+#emptyMessage {
+  text-align: center;
+
+  color: #777;
+
+  padding: 30px 0;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .movie-form {
+    flex-direction: column;
+  }
+
+  #addBtn {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .filters {
+    justify-content: center;
+  }
+}
